@@ -7,10 +7,11 @@
 */
 void selection_sort(int *array, size_t size)
 {
-	int i, y, min = array[0], min_index, tmp;
+	int i, y, min, min_index, tmp;
 
 	if (array == NULL)
 		return;
+	min = array[0];
 	for (y = 0; y < (int)size - 1; y++)
 	{
 
